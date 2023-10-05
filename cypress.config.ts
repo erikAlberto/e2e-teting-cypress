@@ -6,7 +6,8 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl:'https://www.demoblaze.com',
-    experimentalStudio: true
+    experimentalStudio: true,
+    defaultCommandTimeout: 3000
   },
   
 });

@@ -1,0 +1,27 @@
+Conclusiones:
+
+Realizando la prueba funcional para la compra de productos en la web app
+'https://www.demoblaze.com' note que existen varios bugs como:
+
+*Los selectores no son unicos existen varios donde se dupica el nombre de la clase o del ID
+* Al seleccionar un producto solo se lo puede realizar haciendo click en el nombre del producto y no 
+haci en la card completa,
+* Cuando se seleciona un producto se abre una nueva ventana obligando asi a volver al home 
+para poder seleccionar otro producto. En este caso se podria sugerir un mejora en la usabilidad en la app 
+* En la vista del carrito de compras en la tabla en el campo de donde se realiza las acciones 
+no tiene un nombre descriptivo para el usuario final
+* No se muestra un mensaje sobre los campos requeridos en el llenado del formulario para completar la compra
+* Exiten campos requeridos en el formulario pero este mensaje de error no se muestra en la vista, solo se muestra 
+en la consola.
+* Permite llenar el formulario sin haber escogido algun producto.
+* No se muestran mensajes de error en los campos requeridos.
+
+Por lo tanto es recomendable aplicar data driven testing ya que existe varios inputs de entrada de datos como el formulario de compra
+tambien se puede aplicar boundary test sobre los campos de entrada del formulario, ya que pude notar que en algunos campos 
+como por ejemplo el de Year permite valores no permitidos
+Para esto hice uso de los fixtures de cypress solo pude realizar para un caso pero se puede realizar para diferentes variaciones de datos
+
+Realice el ejercicio sin aplicar el ptrano de diseñ Page Object y luego realice un segundo test utilizando el patron de diseño Page Objec Model, 
+por que nos ayuda en la mantenibilidad y evita la duplicaion de codigo.
+Tambien mencionar que podria ser posible implementar el aproach BDD en el framework para mejor entendimiento de
+los test cases para personal no tecnico.
