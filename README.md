@@ -24,6 +24,13 @@ Run the test by opening a browser
 ```javascript
 npm run cy:run
 ```
+To run test and generate Html report run the follow commands:
+```javascript
+npm run test:cli
+```
+```javascript
+npm run create:html:report
+```
 
 ## SUT
 For this example I use the following web app:

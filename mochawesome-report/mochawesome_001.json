@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-06T13:28:50.060Z",
+    "end": "2023-10-06T13:29:11.376Z",
+    "duration": 21316,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9ff6261f-c314-48c3-8363-c45a66aadaff",
+      "title": "",
+      "fullFile": "cypress\\e2e\\purchase_products.cy.ts",
+      "file": "cypress\\e2e\\purchase_products.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6870986b-37d8-48ba-aae3-ebd3ea7144cd",
+          "title": "Purchase products",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "place order of the products",
+              "fullTitle": "Purchase products place order of the products",
+              "timedOut": null,
+              "duration": 21182,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#cartur').click();\nnames.forEach(function (item) {\n    cy.contains('.success', \"\".concat(item));\n});\ncy.get('.success').should('be.visible');\ncy.get('.success').should('have.length', 2);\ncy.get('.col-lg-1 > .btn').click();\ncy.get('#name').type(_this.data.name);\ncy.get('#country').type(_this.data.country);\ncy.get('#city').type(_this.data.city);\ncy.get('#card').type(_this.data.card);\ncy.get('#month').type(_this.data.month);\ncy.get('#year').type(_this.data.year);\ncy.get('#orderModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click();\ncy.get('.confirm').click();",
+              "err": {},
+              "uuid": "eeaf4068-2f1d-4282-b087-6c3240fd7d53",
+              "parentUUID": "6870986b-37d8-48ba-aae3-ebd3ea7144cd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eeaf4068-2f1d-4282-b087-6c3240fd7d53"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21182,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

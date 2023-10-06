@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-06T13:28:22.907Z",
+    "end": "2023-10-06T13:28:45.920Z",
+    "duration": 23013,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6cead797-1af5-4485-b74a-03276cc00df5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\pom_purchase_products.cy.ts",
+      "file": "cypress\\e2e\\pom_purchase_products.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b676ffc7-7263-488c-a24f-9e303f08d32f",
+          "title": "Purchase products",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "place order of the products",
+              "fullTitle": "Purchase products place order of the products",
+              "timedOut": null,
+              "duration": 22884,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "HomePage_1.default.buttonCart.click();\nCartPage_1.default.elementProduct.should('be.visible');\nCartPage_1.default.elementProduct.should('have.length', 2);\nCartPage_1.default.buttonPlaceOrder.click();\nCartPage_1.default.placeOrder();",
+              "err": {},
+              "uuid": "c113cdbc-a206-4491-896d-0d190924c559",
+              "parentUUID": "b676ffc7-7263-488c-a24f-9e303f08d32f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c113cdbc-a206-4491-896d-0d190924c559"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22884,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

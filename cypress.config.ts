@@ -10,4 +10,10 @@ module.exports = defineConfig({
     defaultCommandTimeout: 3000
   },
   
+  "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
 });
